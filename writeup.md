@@ -123,4 +123,4 @@ We can see the resultant video generated in cells 22 and 23  in the next link: [
 
 The approach used is based in combine different ways of detect lanes, in order to make detection algorithm as robust as posible.
 
-When exist lot of lines in images and changing light conditions is not easy know what is the correct one so some improvements need to be done to tackle succesfully challenge. Specially in lane binarization and in lane detection.
+When are lot of lines in images and changing light conditions is not easy know what is the correct one so some improvements need to be done to tackle succesfully challenge. Specially in lane binarization and in lane detection.
