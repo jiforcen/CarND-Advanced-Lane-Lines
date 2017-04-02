@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 
-All de code of this project is in the file called "code.py", you can found it here [link to Code.ipynb](./Code.ipynb)
+Code of this project is in the file called "code.py", you can found it here [link to Code.ipynb](./Code.ipynb)
 
 ###Camera Calibration
 
