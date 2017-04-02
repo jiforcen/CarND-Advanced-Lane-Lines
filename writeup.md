@@ -1,8 +1,6 @@
 ---
----
-
 **Advanced Lane Finding Project**
-
+---
 The goals / steps of this project are the following:
 
 * Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
@@ -16,12 +14,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./writeup_image/Undistorted_Chess.png "Undistorted_chessboard"
-[image2]: ./writeup_image/Undistorted_test.png "Undistorted_test_image"
-[image3]: ./writeup_image/binary.png "binary"
-[image4]: ./writeup_image/lane_detection.png "lane_detection"
-[image5]: ./writeup_image/warp.png "warp"
-[image5]: ./writeup_image/formula.png "formula"
+[image1]: ./writeup_images/Undistorted_Chess.png "Undistorted_chessboard"
+[image2]: ./writeup_images/Undistorted_test.png "Undistorted_test_image"
+[image3]: ./writeup_images/binary.png "binary"
+[image4]: ./writeup_images/lane_detection.png "lane_detection"
+[image5]: ./writeup_images/warp.png "warp"
+[image5]: ./writeup_images/Formula.png "Formula"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
