@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 
-All de code of this project is in the file called "code.py", you can found it here [link to code.py](./Code.py)
+All de code of this project is in the file called "code.py", you can found it here [link to code.py](./Code.ipynb)
 
 ###Camera Calibration
 
@@ -48,6 +48,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 ###Pipeline (single images)
 
 ####1. Provide an example of a distortion-corrected image.
+
 In cell 4 we can see the distortion correction to one of the test images like this one:
 ![alt text][image2]
 
