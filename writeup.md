@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./writeup_images/Undistorted_Chess.png "Undistorted_chessboard"
-[image2]: ./writeup_images/Undistorted_test.png "Undistorted_test_image"
+[image2]: ./writeup_images/Undistorted_test.png "Undistorted_test"
 [image3]: ./writeup_images/binary.png "binary"
 [image4]: ./writeup_images/lane_detection.png "lane_detection"
 [image5]: ./writeup_images/warp.png "warp"
@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 
-All de code of this project is in the file called "code.py", you can found it here [link to code.py](./code.py)
+All de code of this project is in the file called "code.py", you can found it here [link to code.py](./Code.py)
 
 ###Camera Calibration
 
