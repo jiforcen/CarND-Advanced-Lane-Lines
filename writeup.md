@@ -1,5 +1,5 @@
 
-**Advanced Lane Finding Project**
+## **Advanced Lane Finding Project**
 
 ---
 The goals / steps of this project are the following:
@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 
-All de code of this project is in the file called "code.py", you can found it here [link to code.py](./Code.ipynb)
+All de code of this project is in the file called "code.py", you can found it here [link to Code.ipynb](./Code.ipynb)
 
 ###Camera Calibration
 
