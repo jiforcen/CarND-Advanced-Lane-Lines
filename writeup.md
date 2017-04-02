@@ -19,7 +19,8 @@ The goals / steps of this project are the following:
 [image3]: ./writeup_images/binary.png "binary"
 [image4]: ./writeup_images/lane_detection.png "lane_detection"
 [image5]: ./writeup_images/warp.png "warp"
-[image5]: ./writeup_images/Formula.png "Formula"
+[image6]: ./writeup_images/Formula.png "Formula"
+[image7]: ./writeup_images/Final.png "Final"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -94,23 +95,28 @@ Here we can see an example:
 
 ####4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Lanes are detected using method of --- explained in udacity classroom
+Code used to detect lane lines is in cell 16 of the python notebook. I used the method "Peaks in a Histogram" explained in the udacity lessons. It consists in take a histogram along all the columns in the lower half of the image to the detect where lanes are as a start point and later apply a technique of sliding window.
 
-![alt text][image6]
-
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+Later polyfit function of python is used to fit data into an 2nd order polynomial.
+Last "n" values of left_fit and right_fit are stored in global variables (Cell 16), then current values of the fit depends on the last measurements in orden to reduce noise and jumps provocated by errors in aisled photograms.
 
 ![alt text][image4]
 
 ####5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `my_other_file.py`
+Radious of curvature (Cell 16) was computed using the proposed method in the lessons based on the next formulas:
+
+![alt text][image6]
+
+Distances in pixels is converted to distance to obtain the result in meters like in the real world not in pixels. 30 meters per 720 pixels are estimated in "y" dimension and 3.7 meters per 850 pixels are estimated in "x" dimension.
+
+Position respect to the center is the difference between the center of the two lanes detected respect to the camera center, scaling also pixels to distance.
 
 ####6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+In the next image we can see the result after appliying all the steps of the pipeline "process_image(img)" (cell 22) to an image.
 
-![alt text][image6]
+![alt text][image7]
 
 ---
 
@@ -118,7 +124,7 @@ I implemented this step in lines # through # in my code in `yet_another_file.py`
 
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+We can see the resultant video generated in cells 22 and 23  in the next link: [link to my video result](./project_output.mp4). Also video with aditional images of the pipeline is created in cells 25 and 26 [link to my video result extended](./project_output_ex.mp4), this is useful to debug code along the entire video.
 
 ---
 
@@ -126,5 +132,6 @@ Here's a [link to my video result](./project_video.mp4)
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+The approach used is based in combine different ways of detect lanes, in order to make detection algorithm as robust as posible.
 
+When exist lot of lines in images and changing light conditions is not easy know what is the correct one so some improvements need to be done to tackle succesfully challenge. Specially in lane binarization and in lane detection.
